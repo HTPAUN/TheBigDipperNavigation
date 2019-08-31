@@ -10,5 +10,5 @@
 ### PS:
 css文件上已写好注释 喜欢的朋友点个:star:
 
-:dizzy:点击此处查看[demo](https://htpaun.github.io/TheBigDipperNavigation/)
+:dizzy:点击此处查看[demo](https://htpaun.github.io/TheBigDipperNavigation/) （我试了一下 要等个7秒左右字体文件才加载完毕）
 
