@@ -1,0 +1,241 @@
+/**/
+
+body{
+	font-size: 10px;/*所以1rem就是10px 2rem就是2*10=20px*/
+	background: #000000 url(../img/background.jpg) no-repeat fixed center;/*背景可以自己换图 所有不同的设备都是显示满图然后截取中间*/
+	background-size:cover;
+}
+
+.content{
+	position: relative;/*相对整个窗口的定位 怎么走里面的星星都不会跑哦 所以直接移动这个框就好了*/
+	top: 0rem;
+	left: auto;
+	width: 28rem;
+	height: 18rem;
+	margin: auto;
+	margin-top: 8rem;
+	border: 1px solid transparent;/*移动的时候把透明边框调成白色比较好定位*/
+}
+
+/*星星（跳转点）*/
+.star{
+	outline: none;
+	text-decoration: none;
+	display: inline-block;
+	width: 1rem;
+	color: white;
+	font-size: 4rem;
+	cursor: pointer;
+	animation: light2 2s alternate infinite;
+}
+
+/*标签*/
+.label{
+	position: absolute;
+	top: 4.5rem;
+	color: #fafafa;
+	font-family: "Aajixi";
+	font-size: 1.2rem;
+}
+
+/*第一颗星星*/
+#star1{
+	display: inline-block;
+	position: absolute;
+	top: 5rem;
+	left: 2rem;
+}
+
+#label1{
+	font-family: "FZFangJHJW";
+	display: none;
+	position: absolute;
+	top: 10rem;
+}
+
+#star1:hover +#label1{
+	display: block;
+}
+
+/*第二颗星星*/
+#star2{
+	animation: light1 4s alternate infinite;
+	position: absolute;
+	top: 2.3rem;
+	left: 6.9rem;
+}
+
+#label2{
+	font-weight: 800;
+	font-size: 1.5rem;
+	display: none;
+	position: absolute;
+	top: 3.8rem;
+	left: 6.3rem;
+}
+
+#star2:hover +#label2{
+	display: block;
+}
+
+/*如此类推*/
+#star3{
+	animation: light2 3s alternate infinite;
+	position: absolute;
+	top: 3.1rem;
+	left:11.2rem;
+}
+
+#star4{
+	animation: light1 6s alternate infinite;
+	position: absolute;
+	top: 4.2rem;
+	left: 16.5rem;
+}
+
+#label3{
+	display: none;
+	font-family: "FZFangJHJW";
+	position: absolute;
+	top: 6rem;
+	left: 15.8rem;
+}
+
+#star4:hover +#label3{
+	display: block;
+}
+
+#star5{
+	animation: light2 4s alternate infinite;
+	position: absolute;
+	top: 9rem;
+	left: 19.3rem;
+}
+
+#star6{
+	animation: light1 2s alternate infinite;
+	position: absolute;
+	top: 7.8rem;
+	left: 24.3rem;
+}
+
+#label4{
+	display: none;
+	font-family: "FZFangJHJW";
+	position: absolute;
+	top: 12.8rem;
+	left: 23rem;
+}
+
+#star6:hover +#label4{
+	display: block;
+}
+
+#star7{
+	animation: light2 5s alternate infinite;
+	position: absolute;
+	top: 2.6rem;
+	left: 24.9rem;
+}
+
+#label5{
+	font-weight: 800;
+	font-size: 1.5rem;
+	display: none;
+	position: absolute;
+	top: 4rem;
+	left: 23.5rem;
+}
+
+#star7:hover +#label5{
+	display: block;
+}
+
+/*星星发光动画*/
+@-webkit-keyframes light1{
+	0%{
+		text-shadow: 0px 0px 20px #84ffff;
+	}
+	
+	50%{
+		text-shadow: 0px 0px 20px #84ffff,0px 0px 20px #ffffff,0px 0px 20px #ffffff,0px 0px 20px #84ffff,0px 0px 20px #ffffff,0px 0px 20px #ffffff,0px 0px 20px #84ffff,0px 0px 20px #ffffff;
+		
+	}
+	100%{
+		text-shadow:0px 0px 20px #84ffff;
+	   
+	}
+}
+
+@-webkit-keyframes light2{
+	0%{
+		text-shadow: 0px 0px 10px #ffffff;
+	}
+	
+	50%{
+		text-shadow: 0px 0px 5px #ffffff,0px 0px 5px #ffffff,0px 0px 5px #ffffff,0px 0px 5px #ffffff,0px 0px 5px #ffffff,0px 0px 5px #ffffff;
+		
+	}
+	100%{
+		text-shadow:0px 0px 10px #ffffff;
+	   
+	}
+}
+
+/*连成星星的线*/
+.line{
+	display:inline-block;
+	border: 0px;
+	border-top: 2px solid #212121;
+	border-style: dashed;
+	width: 4rem;
+	height: 1rem;
+	z-index: 2;
+}
+
+#line1{
+	-webkit-transform:rotate(-30deg);
+	position: absolute;
+	left: 3.2rem;
+	top: 7.5rem;
+}
+
+#line2{
+	width: 3rem;
+	-webkit-transform: rotate(10deg);
+	position: absolute;
+	left: 8rem;
+	top: 6.7rem;
+}
+
+#line3{
+	width: 4rem;
+	-webkit-transform: rotate(10deg);
+	position: absolute;
+	left: 12.2rem;
+	top: 7.6rem;
+}
+
+#line4{
+	width: 4rem;
+	-webkit-transform: rotate(-120deg);
+	position: absolute;
+	left: 16.8rem;
+	top: 9.8rem;
+}
+
+#line5{
+	width: 4rem;
+	-webkit-transform: rotate(-17deg);
+	position: absolute;
+	left: 20.5rem;
+	top: 12.5rem;
+}
+
+#line6{
+	width: 4rem;
+	-webkit-transform: rotate(95deg);
+	position: absolute;
+	left: 22.6rem;
+	top: 8.7rem;
+}

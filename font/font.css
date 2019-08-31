@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*字体不是买的!不能商用!!*/
+/*中文*/
+@font-face {
+  font-family: "FZFangJHJW";
+  src: url("FZFangJHJW.woff2") format("woff2"),
+       url("FZFangJHJW.woff") format("woff"),
+       url("FZFangJHJW.ttf") format("truetype"),
+       url("FZFangJHJW.eot") format("embedded-opentype"),
+       url("FZFangJHJW.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*英文*/
+@font-face {
+  font-family: "Aajixi";
+  src: url("Aajixi") format("woff"),
+       url("Aajixi.ttf") format("truetype"),
+       url("Aajixi.eot") format("embedded-opentype"),
+       url("Aajixi.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
